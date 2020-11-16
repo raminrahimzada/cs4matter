@@ -11,16 +11,9 @@ namespace CSharpFormatter
     {
         static int Main(string[] args)
         {
-#if DEBUG
-            args = new[]
-            {
-                @"C:\PROJECTS\BMS\BMS.Generator\Program.cs",
-                @"C:\PROJECTS\BMS\BMS.Generator\Program.cs"
-            };
-#endif
             if (args.Length != 1&& args.Length != 2)
             {
-                Console.WriteLine(@"usage cs4matter {input-file} [output-file]");
+                Console.WriteLine(@"usage: cs4matter {input-file} [output-file]");
                 return -1;
             }
 
